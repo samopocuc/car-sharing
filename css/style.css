@@ -1,5 +1,6 @@
 * { box-sizing: border-box; }
 
+/* variables */
 :root {
     --white-color: #FFFFFF;
     --white-color-transparent-100: #FFFFFF33;
@@ -8,21 +9,27 @@
     --black-color-transparent-200:#00000040;
     --gray-color-400: #D1D1D1;
     --gray-color-300: #B2B2B2;
-    --gray-color-200:#28272C;
+    --gray-color-200: #28272C;
     --gray-color-100: #6A6A6A;
     --secondary-color: #FF0000;
     --secondary-color-transparent-100: #FF00004D;
+    --primary-font: "Nunito Sans";
+    --secondary-font: "Open Sans";
 }
+/* e: variables */
 
-body {
-    font-family: "Nunito Sans", sans-serif;
-}
+body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
 
+/* container */
 .container {
     width: 1088px;
     margin: 0 auto;
 }
+/* e: container */
 
+/* top-section */
+
+/* TODO!!! Add background, add hover and border, fix positioning */
 .top-section {
     display: flex;
     justify-content: space-between;
@@ -40,20 +47,174 @@ body {
     font-size: 2.1875em;
 }
 .top-section__logo span { color: var(--secondary-color);}
+
 .top-section__nav-list {
     display: flex;
     gap: 57px;
 }
-.top-section__nav-item a {
+.top-section__nav-item a, .footer-section__nav-item a {
     color: var(--white-color);
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1em;
     text-decoration: none;
 }
+
+/* e: top-section */
+
+/* header */
+/* TODO!!! add overlay and icon */
+
 .header {
     background-image: url(../images/image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 850px; /* TODO */
+    min-height: 100vh; /* TODO */
+    margin-top: -110px;
+    padding-top: 250px;
+    text-align: center;
 }
+.header__title {
+    color: var(--white-color);
+    font: normal normal 900 5.625em var(--primary-font);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    text-shadow: 0 3px 6px var(--black-color-transparent-100);
+}
+.header__subtitle {
+    color: var(--white-color);
+    font: normal normal bold 1em var(--primary-font);
+}
+
+.btn-container { margin-top: 3.375em; }
+
+/* e: header */
+
+/* buttons */
+
+.btn {
+    border-radius: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 1.5625em;
+}
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.btn-secondary {
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+}
+
+.btn-large { padding: 1.375em 3.4375em; }
+.btn-small { padding: 0.6875em 1.875em; }
+
+/* e: buttons */
+
+/* blog */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.section__columns {
+    display: flex;
+    gap: 16px;
+}
+.section__title {
+    font: normal normal bold 2.1875em var(--primary-font);
+    letter-spacing: 0;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin-bottom: 2.1875rem;
+}
+.section__column--title {
+    font: normal normal normal 1.1875em var(--primary-font);
+    letter-spacing: 0;
+    color: var(--gray-color-100);
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+}
+.section__column--subtitle {
+    font: normal normal 300 0.875em var(--secondary-font);
+    letter-spacing: 0;
+    color: var(--gray-color-100);
+    margin-right: 92px;
+    margin-bottom: 15px;
+}
+/* e: blog */
+
+/* service */
+#service {
+    background-color: var(--gray-color-200);
+    text-align: center;
+}
+
+#service .section__title {
+    color: var(--white-color);
+}
+#service .section__column--title {
+    color: var(--white-color);
+}
+#service .section__column--subtitle {
+    color: var(--gray-color-300);
+    margin-right: 0;
+}
+/* e: service */
+
+/* contact */
+/* TODO!!! */
+
+.form {
+
+}
+.form__input {
+    width: 100%;
+    border: 1px solid var(--gray-color-400);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+}
+.form__checkbox {
+    margin-bottom: 20px;
+}
+/* e: contact */
+/* footer */
+.footer {
+    background-color: var(--gray-color-200);
+    min-height: 230px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+.footer__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer__section-column {
+    display: flex;
+    gap: 140px;
+}
+.footer-section__nav-item {
+    margin-bottom: 5px;
+}
+.footer-section__nav-item a:hover {
+    color: var(--secondary-color);
+}
+.footer__copyright {
+    font: normal normal 300 0.75em var(--primary-font);
+    letter-spacing: 0;
+    color: var(--gray-color-400);
+}
+/* e: footer */

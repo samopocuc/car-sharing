@@ -11,34 +11,199 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- top-section -->
 <div class="top-section container">
+    <!-- logo -->
     <div class="top-section__logo">
         <img src="images/icon.svg" alt="logo" />
         <span>Car</span> sharing
     </div>
+    <!-- e: logo -->
+
+    <!-- nav -->
     <nav class="top-section__nav">
         <ul class="top-section__nav-list">
             <li class="top-section__nav-item">
                 <a href="#" class="top-section__nav-link">Home</a>
             </li>
             <li class="top-section__nav-item">
-                <a href="#" class="top-section__nav-link">Blog</a>
+                <a href="#blog" class="top-section__nav-link">Blog</a>
             </li>
             <li class="top-section__nav-item">
-                <a href="#" class="top-section__nav-link">Service</a>
+                <a href="#service" class="top-section__nav-link">Service</a>
             </li>
             <li class="top-section__nav-item">
                 <a href="#" class="top-section__nav-link">Contact</a>
             </li>
         </ul>
     </nav>
+    <!-- e: nav -->
 </div>
+<!-- e: top-section -->
+
+<!-- header -->
 <header class="header">
     <div class="container">
-        <!--<h1 class="header__title">Car Sharing</h1>-->
+        <h1 class="header__title">Car Sharing</h1>
+        <p class="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="btn-container">
+            <a href="#" class="btn btn-primary btn-large">Share a car</a>
+            <a href="#" class="btn btn-secondary btn-large">Key features</a>
+        </div>
     </div>
 </header>
-</body>
-</html>
+<!-- e: header -->
+
+<!-- blog -->
+<section class="section container" id="blog">
+    <h2 class="section__title">Blog</h2>
+    <div class="section__columns">
+        <div class="section__column">
+            <img src="images/photo1.png" alt="image" />
+            <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+            <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            <a href="#" class="btn btn-primary btn-small">Read more</a>
+        </div>
+        <div class="section__column">
+            <img src="images/photo2.png" alt="image" />
+            <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+            <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            <a href="#" class="btn btn-primary btn-small">Read more</a>
+        </div>
+        <div class="section__column">
+            <img src="images/photo3.png" alt="image" />
+            <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+            <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            <a href="#" class="btn btn-primary btn-small">Read more</a>
+        </div>
+    </div> <!-- e: section__columns -->
+</section>
+<!-- e:blog -->
+
+<!-- service -->
+<section class="section" id="service">
+    <div class="container">
+        <h2 class="section__title">Service</h2>
+        <div class="section__columns">
+            <div class="section__column">
+                <img src="images/mini1.png" alt="image" />
+                <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-small">Read more</a>
+            </div>
+            <div class="section__column">
+                <img src="images/mini2.png" alt="image" />
+                <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-small">Read more</a>
+            </div>
+            <div class="section__column">
+                <img src="images/mini3.png" alt="image" />
+                <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-small">Read more</a>
+            </div>
+            <div class="section__column">
+                <img src="images/mini4.png" alt="image" />
+                <h2 class="section__column--title">LOREM IPSUM SIT DOLOR</h2>
+                <p class="section__column--subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                <a href="#" class="btn btn-primary btn-small">Read more</a>
+            </div>
+        </div> <!-- e: section__columns -->
+    </div> <!-- e: container -->
+</section>
+<!-- e: service -->
+
+<!-- contact -->
+<section class="section container" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <div class="section__columns">
+        <div class="section__column">
+            <img src="images/form_photo.png" alt="image" />
+        </div>
+        <div class="section__column">
+            <form action="#" class="form">
+                <!-- TODO -->
+                <label for="name"></label>
+                <input type="text" placeholder="Type your name" id="name" class="form__input" /><br/>
+                <label for="email"></label>
+                <input type="text" placeholder="Type your e-mail" id="email" class="form__input" /><br/>
+                <label for="message"></label>
+                <textarea  placeholder="Type your message" id="message" class="form__input"></textarea><br/>
+                <input type="checkbox" id="checkbox" />
+                <label for="checkbox" class="form__checkbox" >I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament's and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label><br/>
+                <br/>
+                <input type="submit" value="Send" class="btn btn-primary btn-small" />
+            </form>
+        </div> <!-- e: section__column -->
+    </div> <!-- e: section__columns -->
+</section>
+<!-- e: contact -->
+
+<!-- footer -->
+<!-- TODO -->
+<footer class="footer">
+    <div class="container">
+
+        <!-- footer__logo -->
+        <div class="footer__logo">
+            <div class="top-section__logo">
+                <img src="images/icon.svg" alt="logo" />
+                <span>Car</span> sharing
+            </div>
+        </div> <!-- e: footer__logo -->
+
+        <!-- footer-section -->
+        <div class="footer__section">
+            <!-- footer section-column -->
+            <div class="footer__section-column">
+
+                <!-- left menu -->
+                <nav class="footer-section__nav">
+                    <ul class="footer-section__nav-list">
+                        <li class="footer-section__nav-item">
+                            <a href="#" class="footer-section__nav-link">Home</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#blog" class="footer-section__nav-link">About us</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#service" class="footer-section__nav-link">Gallery</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#" class="footer-section__nav-link">Share regulation</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- e: left menu -->
+
+                <!-- right menu -->
+                <nav class="footer-section__nav">
+                    <ul class="footer-section__nav-list">
+                        <li class="footer-section__nav-item">
+                            <a href="#" class="footer-section__nav-link">Price</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#blog" class="footer-section__nav-link">Our fleet</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#service" class="footer-section__nav-link">Our clients</a>
+                        </li>
+                        <li class="footer-section__nav-item">
+                            <a href="#" class="footer-section__nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </nav><!-- e: right menu -->
+
+            </div><!-- e: footer section-column -->
+
+            <div class="footer__section-column">
+                <p class="footer__copyright">Copyright CodersLab</p>
+            </div><!-- e: footer section-column -->
+
+        </div> <!-- e: footer-section -->
+    </div><!-- e: container -->
+</footer>
+<!-- e: footer -->
 </body>
 </html>
