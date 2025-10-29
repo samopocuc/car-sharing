@@ -30,12 +30,24 @@ body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
 /* top-section */
 
 /* TODO!!! Add background, add hover and border, fix positioning */
+
+/* top-section */
+
 .top-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 88px;
-    background: var(--black-color); /* TODO */
+    background: var(--black-color-transparent-100);
+    border-bottom: 2px solid var(--white-color-transparent-100);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.top-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .top-section__logo {
     display: flex;
@@ -51,6 +63,16 @@ body { font-family: var(--primary-font), sans-serif; font-size: 16px;}
 .top-section__nav-list {
     display: flex;
     gap: 57px;
+}
+.top-section__nav-item .top-section__nav-item a {
+    height: 86px;
+    width: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-section__nav-item:hover {
+    background-color: var(--white-color-transparent-100);
 }
 .top-section__nav-item a, .footer-section__nav-item a {
     color: var(--white-color);
